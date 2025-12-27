@@ -418,13 +418,129 @@ section {
 /* Projects Section */
 .projects {
     background-color: var(--secondary-black);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0 20px;
+}
+
+.projects-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.projects-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding: 20px 20px 40px 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-purple) rgba(26, 26, 26, 0.5);
+    -webkit-overflow-scrolling: touch;
+    user-select: none;
+}
+
+.projects-wrapper::-webkit-scrollbar {
+    height: 12px;
+}
+
+.projects-wrapper::-webkit-scrollbar-track {
+    background: rgba(26, 26, 26, 0.5);
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, var(--dark-purple), var(--light-purple));
+    border-radius: 10px;
+    border: 2px solid rgba(26, 26, 26, 0.5);
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, var(--light-purple), var(--accent-purple));
+}
+
+.projects-wrapper:active {
+    cursor: grabbing;
+    user-select: none;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
     gap: 40px;
-    margin-top: 50px;
+    width: max-content;
+    padding: 10px 20px;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--dark-purple), var(--light-purple));
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(107, 70, 193, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+}
+
+.scroll-btn:hover:not(:disabled) {
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 10px 40px rgba(107, 70, 193, 0.8);
+    background: linear-gradient(135deg, var(--light-purple), var(--accent-purple));
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.scroll-btn:active:not(:disabled) {
+    transform: translateY(-50%) scale(1.05);
+}
+
+.scroll-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.scroll-btn span {
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
 }
 
 .project-card {
@@ -435,6 +551,10 @@ section {
     border: 1px solid rgba(107, 70, 193, 0.2);
     opacity: 0;
     transform: translateY(20px);
+    min-width: 400px;
+    max-width: 400px;
+    flex-shrink: 0;
+    height: auto;
 }
 
 .project-card.fade-in {
@@ -640,6 +760,13 @@ section {
     transition: var(--transition);
 }
 
+.btn-icon {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: var(--transition);
+}
+
 .social-btn:hover .btn-icon {
     opacity: 1;
     transform: translateX(0);
@@ -708,9 +835,35 @@ section {
         font-size: 2rem;
     }
 
-    .skills-grid,
-    .projects-grid {
+    .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        padding: 0 50px;
+    }
+
+    .projects-wrapper {
+        padding: 20px 10px 40px 10px;
+    }
+
+    .scroll-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .scroll-left {
+        left: 5px;
+    }
+
+    .scroll-right {
+        right: 5px;
+    }
+
+    .project-card {
+        min-width: 320px;
+        max-width: 320px;
     }
 
     .social-buttons {
