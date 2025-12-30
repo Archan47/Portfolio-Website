@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="cursor-glow"></div>
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Professional Developer & Designer</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Archan Kundu Chowdhury, a passionate computer science student with a strong interest
+                        in Machine Learning and Deep Learning, alongside hands-on experience in web development.</p>
+                    <p>I enjoy building intelligent systems that combine data-driven decision making with clean,
+                        scalable web interfaces. My work focuses on applying ML and DL concepts to real-world problems
+                        while delivering user-friendly digital solutions through modern web technologies.</p>
+                    <p>I’m constantly learning and experimenting with new frameworks, algorithms, and tools to stay
+                        updated with advancements in AI, data science, and full-stack development, aiming to bridge the
+                        gap between research and practical applications. </p>
+                    <p> Enthusiastic about
+                        continuous learning, innovation and maintaining a disciplined lifestyle through running and
+                        regular workout</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>NLP, Predictive Modeling, Classification, Sentiment Analysis, Supervised Learning, Unsupervised
+                        Learning, Reinforcement Learning</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Deep Learning</h3>
+                    <p>Neural Networks (ANN,RNN,CNN), Transfer Learning, Transformers, Attention Mechanisms, Langchain,
+                        RAG</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages & Version Control</h3>
+                    <p>Python, Java, MySQL, HTML, CSS, JavaScript, Linux/Unix, Git/GitHub</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Full Stack Development</h3>
+                    <p>React, Spring Boot, Flask, Tailwind CSS, Material UI, Streamlit, MySQL, MongoDb</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analytics</h3>
+                    <p>NumPy, Pandas, Matplotlib, Plotly, Seaborn, Data Visualization, Analysis</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>ML/DL Libraries</h3>
+                    <p>TensorFlow, PyTorch, scikit-learn, Hugging Face, Keras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <button class="scroll-btn scroll-left" id="scrollLeft">
+                    <span>‹</span>
+                </button>
+                <div class="projects-wrapper">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image project-highlight">
+                                <img src="images/ai-therapist.png" alt="AI Therapist" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://github.com/MindSpace-TalkItOut" class="project-link"
+                                        target="_blank">View on Kaggle</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>AI Therapist using Generative AI</h3>
+                                <p>React-Flask web application integrated with LLM through
+                                    Langchain. Implemented RAG as vector database with security against LLM
+                                    hallucination and Prompt Injection (under development).</p>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Flask</span>
+                                    <span>Langchain</span>
+                                    <span>RAG</span>
+                                    <span>MongoDb</span>
+                                    <Span>Chatbot</Span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/chatbot.avif" alt="Mental Health Chatbot" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://www.kaggle.com/code/archankunduchowdhury/mental-health-chatbot-using-dialogpt"
+                                        class="project-link" target="_blank">View on Kaggle</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Mental Health Chatbot</h3>
+                                <p>Implemented using DialoGPT-small transformer with zero-shot sentiment analysis
+                                    achieving 73% accuracy. Evaluated with BLEU & BERT scores for response quality
+                                    assessment.</p>
+                                <div class="project-tags">
+                                    <span>DialoGPT</span>
+                                    <span>Transformers</span>
+                                    <span>Sentiment Analysis</span>
+                                    <span>NLP</span>
+                                    <span>BERT-SCORE</span>
+                                    <Span>Evaluation</Span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/lstm.png" alt="Fake News Classification" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://www.kaggle.com/code/archankunduchowdhury/fake-real-news-classifier-using-lstm-all-types"
+                                        class="project-link" target="_blank">View on Kaggle</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Fake-Real News Classification</h3>
+                                <p>Developed LSTM, Bidirectional LSTM & GRU models achieving 99.43%, 99.73%, and 99.71%
+                                    accuracy respectively for binary classification of news articles.</p>
+                                <div class="project-tags">
+                                    <span>LSTM</span>
+                                    <span>BidirectionaLSTM</span>
+                                    <span>GRU</span>
+                                    <span>TensorFlow</span>
+                                    <span>Binary Classification</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/movie-recommender.png" alt="Movie Recommendation System"
+                                    class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://github.com/Archan47/Movie-Recommendation-System"
+                                        class="project-link" target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Movie Recommendation System</h3>
+                                <p>Complete NLP-based system suggesting movies using content-based filtering with
+                                    intuitive Streamlit UI for seamless user experience.</p>
+                                <div class="project-tags">
+                                    <span>NLP</span>
+                                    <span>Content Filtering</span>
+                                    <span>Streamlit</span>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/spam-detection.jpg" alt="Spam SMS Detection" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://github.com/Archan47/Spam-SMS-Classifier" class="project-link"
+                                        target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Spam SMS Detection</h3>
+                                <p>Implemented using KNN, SVC, Naive Bayes, AdaBoost. Final Multinomial Naive Bayes
+                                    model achieving 97% accuracy & 100% precision with Streamlit interface.</p>
+                                <div class="project-tags">
+                                    <span>Machine Learning</span>
+                                    <span>Naive Bayes</span>
+                                    <span>Streamlit</span>
+                                    <span>scikit-learn</span>
+                                    <span>Classification</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/bakery.jpg" alt="Online Bakery Shop" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://github.com/Online-Bakery-Shop" class="project-link"
+                                        target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Online Bakery Shop Website</h3>
+                                <p>Full-stack e-commerce application using SpringBoot backend, React frontend, and MySQL
+                                    database with complete shopping functionality.</p>
+                                <div class="project-tags">
+                                    <span>Spring Boot</span>
+                                    <span>React</span>
+                                    <span>MySQL</span>
+                                    <span>Full Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/dog-cat.jpg" alt="Image Classification" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://www.kaggle.com/code/archankunduchowdhury/image-classification-using-transfer-learning-98"
+                                        class="project-link" target="_blank">View on Kaggle</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Dog-Cat Image Classification using Transfer Learning</h3>
+                                <p>A complete CNN based Binary Classification. MobileNetv2 model is used for the
+                                    classification with 97% test accuracy</p>
+                                <div class="project-tags">
+                                    <span>CNN</span>
+                                    <span>Deep Learning</span>
+                                    <span>MobileNetv2</span>
+                                    <span>Transfer Learning</span>
+                                    <span>Image Classification</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-right" id="scrollRight">
+                    <span>›</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content-simple">
+                <div class="contact-email">
+                    <a href="mailto:your.email@example.com" class="email-link">chowdhuryarchan20021@gmail.com</a>
+                </div>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/in/archan-kundu-chowdhury-5a71a1245/" target="_blank"
+                        class="social-btn">
+                        <span class="btn-text">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Archan47" target="_blank" class="social-btn">
+                        <span class="btn-text">GitHub</span>
+                    </a>
+                    <a href="https://www.kaggle.com/archankunduchowdhury" target="_blank" class="social-btn">
+                        <span class="btn-text">Kaggle</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Archan Kundu Chowdhury</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .project-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Custom Cursor Glow Effect
+        const cursorGlow = document.querySelector('.cursor-glow');
+
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        // Hide cursor glow when mouse leaves the window
+        document.addEventListener('mouseleave', () => {
+            cursorGlow.style.opacity = '0';
+        });
+
+        document.addEventListener('mouseenter', () => {
+            cursorGlow.style.opacity = '1';
+        });
+
+        // Horizontal Scroll for Projects
+        const projectsWrapper = document.querySelector('.projects-wrapper');
+        const scrollLeftBtn = document.getElementById('scrollLeft');
+        const scrollRightBtn = document.getElementById('scrollRight');
+
+        if (projectsWrapper && scrollLeftBtn && scrollRightBtn) {
+            // Scroll with buttons
+            scrollLeftBtn.addEventListener('click', () => {
+                projectsWrapper.scrollBy({
+                    left: -460,
+                    behavior: 'smooth'
+                });
+            });
+
+            scrollRightBtn.addEventListener('click', () => {
+                projectsWrapper.scrollBy({
+                    left: 460,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Update button states based on scroll position
+            function updateScrollButtons() {
+                const scrollLeft = projectsWrapper.scrollLeft;
+                const maxScroll = projectsWrapper.scrollWidth - projectsWrapper.clientWidth;
+
+                // Disable/enable left button
+                if (scrollLeft <= 5) {
+                    scrollLeftBtn.disabled = true;
+                } else {
+                    scrollLeftBtn.disabled = false;
+                }
+
+                // Disable/enable right button
+                if (scrollLeft >= maxScroll - 5) {
+                    scrollRightBtn.disabled = true;
+                } else {
+                    scrollRightBtn.disabled = false;
+                }
+            }
+
+            // Listen to scroll events
+            projectsWrapper.addEventListener('scroll', updateScrollButtons);
+            window.addEventListener('load', updateScrollButtons);
+            window.addEventListener('resize', updateScrollButtons);
+
+            // Initial check
+            setTimeout(updateScrollButtons, 100);
+
+            // Mouse drag to scroll
+            let isDown = false;
+            let startX;
+            let scrollLeftPos;
+
+            projectsWrapper.addEventListener('mousedown', (e) => {
+                // Don't interfere with links
+                if (e.target.closest('a') || e.target.closest('.project-link')) {
+                    return;
+                }
+
+                isDown = true;
+                projectsWrapper.style.cursor = 'grabbing';
+                startX = e.pageX - projectsWrapper.offsetLeft;
+                scrollLeftPos = projectsWrapper.scrollLeft;
+                e.preventDefault();
+            });
+
+            projectsWrapper.addEventListener('mouseleave', () => {
+                isDown = false;
+                projectsWrapper.style.cursor = 'grab';
+            });
+
+            projectsWrapper.addEventListener('mouseup', () => {
+                isDown = false;
+                projectsWrapper.style.cursor = 'grab';
+            });
+
+            projectsWrapper.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - projectsWrapper.offsetLeft;
+                const walk = (x - startX) * 2;
+                projectsWrapper.scrollLeft = scrollLeftPos - walk;
+            });
+
+            // Horizontal scroll with mouse wheel
+            projectsWrapper.addEventListener('wheel', (e) => {
+                if (e.deltaY !== 0) {
+                    e.preventDefault();
+                    projectsWrapper.scrollLeft += e.deltaY;
+                }
+            }, { passive: false });
+        }
+    </script>
+</body>
+
+</html>
