@@ -603,7 +603,7 @@ section {
     50% { background-position: 100% 50%; }
 }
 
-.project-highlight::before {
+/* .project-highlight::before {
     content: '🔬 Research';
     position: absolute;
     top: 15px;
@@ -616,7 +616,7 @@ section {
     font-weight: 600;
     color: var(--white);
     z-index: 1;
-}
+} */
 
 .project-overlay {
     position: absolute;
